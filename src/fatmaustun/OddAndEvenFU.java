@@ -7,7 +7,6 @@ public class OddAndEvenFU {
         int number2 =5;
         String result = oddEven(number);
         System.out.println(result);
-
     }
 
     public static String oddEven(int number) {
