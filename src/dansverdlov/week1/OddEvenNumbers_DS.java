@@ -1,4 +1,4 @@
-package dansverdlov;
+package dansverdlov.week1;
 
 public class OddEvenNumbers_DS {
 
