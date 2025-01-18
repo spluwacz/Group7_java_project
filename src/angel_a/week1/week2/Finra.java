@@ -10,7 +10,7 @@ public class Finra {
           For numbers that are a multiple of both 3 and 5, print "FINRA" instead of the number.
 
          */
-        int num=30;// first we declare a number - they are 4 posiible outcomes,just number
+        int num=10;// first we declare a number - they are 4 posiible outcomes,just number
                   // by 3, by 5 , or both
 
         boolean byNum3= num %3==0;
