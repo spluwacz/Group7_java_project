@@ -1,4 +1,4 @@
-package saltanat.week1;
+package saltanat.week2;
 
 public class FINRA {
 
