@@ -6,7 +6,7 @@ public class OddAndEvenNumber_OS {
         System.out.println(oddOrEven(27));
 
     }
-
+// new changes
 
     public static String oddOrEven(int num1) {
         if (num1 % 2 == 0) {
