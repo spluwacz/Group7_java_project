@@ -10,7 +10,6 @@ public class OddAndEvenNumber_NT {
         int num = scanner.nextInt();
 
         System.out.println(oddOrEven(num));
-
         scanner.close();
     }
 
@@ -20,6 +19,7 @@ public class OddAndEvenNumber_NT {
         } else {
             return "Odd";
         }
+
     }
 
 }
