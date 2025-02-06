@@ -28,7 +28,7 @@ public static void reversedNumber(int num) {
         System.out.println(num);
 
     }
-    if(num > 0){
+    else if(num > 0){
         String originalNum = Integer.toString(num);//convert int to string
 
         String reversedNum = new StringBuilder(originalNum).reverse().toString(); // I did all this in one line normally I would have to create a string builder object convert to it and then back to string
