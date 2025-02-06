@@ -7,7 +7,9 @@ public class ReverseNegativeNumber_K_T {
 //    and return it as a int
 public static void main(String[] args) {
 
-    reversedNumber(123);
+    //reversedNumber(-632);
+
+    System.out.println("reverseNum(-132) = " + reverseNum(-132));
 
 
 }
@@ -25,21 +27,11 @@ public static void reversedNumber(int num) {
         String reversedNum = new StringBuilder(originalNum).reverse().toString(); // I did all this in one line normally I would have to create a string builder object convert to it and then back to string
 
         num = Integer.parseInt(reversedNum);
+        num = -num;//change positive to negative
         System.out.println(num);
 
-    }
-    else if(num > 0){
-        String originalNum = Integer.toString(num);//convert int to string
-
-        String reversedNum = new StringBuilder(originalNum).reverse().toString(); // I did all this in one line normally I would have to create a string builder object convert to it and then back to string
-
-        num = Integer.parseInt(reversedNum); // assigned num and converted string to int
-
-        num = -num;//change positive to negative, this time at the end so it doesnt give errors
-
-
-
-        System.out.println(num);
+    } else if(num > 0){
+        System.out.println("please enter negative number");
 
 
 
@@ -53,7 +45,13 @@ public static void reversedNumber(int num) {
     }
 
 
-
+    public static int reverseNum(int  num) {
+        String str = new StringBuilder(""+num).reverse().toString();
+        if(num < 0) { //231-
+            str = "-"+str.substring(0, str.length()-1);
+        }
+        return Integer.valueOf(str);
+    }
 
 
 
