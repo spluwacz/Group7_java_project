@@ -1,32 +1,39 @@
 package dansverdlov.week5;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class FrequencyOfChars_DS {
 
+
     public static void main(String[] args) {
-        String inputString = "AAABBCDD";
-        String result = frequencyOfChars(inputString);
-        System.out.println(result);  // Output: A3B2C1D2
+        // Test the function with the input string "AAABBCDD"
+        String input = "AAABBCDD";
+        System.out.println(FrequencyOfChars(input));  // Output: A3B2C1D2
     }
 
-    public static String frequencyOfChars(String inputString) {
-        // Use a HashMap to store the frequency of each character
-        HashMap<Character, Integer> frequencyMap = new HashMap<>();
+    public static String FrequencyOfChars(String str) {
+        // Create a HashMap to store the frequency of characters
+        Map<Character, Integer> frequencyMap = new HashMap<>();
 
-        // Count the frequency of each character
-        for (char ch : inputString.toCharArray()) {
-            frequencyMap.put(ch, frequencyMap.getOrDefault(ch, 0) + 1);
+        // Iterate through the string and update the frequency of each character
+        for (char c : str.toCharArray()) {
+            frequencyMap.put(c, frequencyMap.getOrDefault(c, 0) + 1);
         }
 
-        // Build the result string in the desired format
+        // StringBuilder to store the result
         StringBuilder result = new StringBuilder();
-        for (char ch : frequencyMap.keySet()) {
-            result.append(ch).append(frequencyMap.get(ch));
+
+        // Iterate over the frequency map and build the result string
+        for (Map.Entry<Character, Integer> entry : frequencyMap.entrySet()) {
+            result.append(entry.getKey()).append(entry.getValue());
         }
 
+        // Return the resulting string
         return result.toString();
     }
+
+
 
 
 }
