@@ -7,6 +7,7 @@ import java.util.Map;
 public class JavaTask5_K_T {
 
     /*
+
     Write a return method that can find the frequency of characters
     Ex: FrequentcyOfChars(*AAABBCDD*) ==> A3B2C1D2
      */
