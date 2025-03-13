@@ -6,6 +6,8 @@ public class UniqueCharacters_JP {
 
         String str = "AAABBBCCCDEF";
         String unique = "";
+
+
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             if (str.indexOf(ch) == str.lastIndexOf(ch)){
