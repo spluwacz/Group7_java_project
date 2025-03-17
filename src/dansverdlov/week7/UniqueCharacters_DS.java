@@ -3,7 +3,7 @@ package dansverdlov.week7;
 public class UniqueCharacters_DS {
 
     public static void main(String[] args) {
-        String input = "AAABBBCCCDEF";
+        String input = "AAABBBCCCDEFA";
         System.out.println(unique(input));  // Output: DEF
     }
 
