@@ -4,7 +4,7 @@ public class PasswordValidation_DS {
 
     public static void main(String[] args) {
         String password = "Passw0rd!";
-        System.out.println("Is the password valid? " + isValidPassword(password));
+        System.out.println("Is the password valid? : " + isValidPassword(password));
     }
 
     public static boolean isValidPassword(String password) {
